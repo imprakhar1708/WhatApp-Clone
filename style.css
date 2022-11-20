@@ -292,6 +292,7 @@ span:hover + .arrow{
     display: flex;
     gap: 1rem;
     padding-left: 1rem;
+    cursor: pointer;
 }
 
 .message{
@@ -312,7 +313,8 @@ span:hover + .arrow{
 .record{
     padding-right: 1.5rem;
     font-size: 1.4rem;
-    font-family: "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif;
+    cursor: pointer;
 
 }
 
