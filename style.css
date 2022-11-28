@@ -175,10 +175,10 @@ span{
     font-weight: 500;
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     width: 5px;
     background: #222d34;
-}
+} */
 
 .chat-content-w-no{
     color: #d1d7db;
@@ -285,7 +285,6 @@ span:hover + .arrow{
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    cursor: pointer;
 }
 
 .bottom-icons{
@@ -314,8 +313,8 @@ span:hover + .arrow{
 .record{
     padding-right: 1.5rem;
     font-size: 1.4rem;
-    font-family: "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif;
     cursor: pointer;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif
 
 }
 
@@ -323,7 +322,6 @@ span:hover + .arrow{
     background: url(https://i.postimg.cc/wBbcLkXh/wp6988787-whatsapp-chat-wallpapers.png);
     width: 100%;
     height: 80vh;
-    overflow: auto scroll;
 }
 
 .right-side-container {
@@ -360,15 +358,12 @@ span:hover + .arrow{
     padding: .5rem .7rem .7rem .7rem;
     border-radius: 0.5rem;
     display: flex;
-    flex-direction: column;
     gap: .3rem;
     position: relative;
 }
 
 .mess-time{
-    position: absolute;
-    bottom: 8%;
-    right: 5%;
+    align-self: flex-end;
     font-size: 11px;
     color: #a6abad;
 }
@@ -376,11 +371,6 @@ span:hover + .arrow{
 .chat-box>p {
     color: #e9edef;;
     font-size: 14.2px;
-}
-
-.number p:last-child {
-    font-size: .8rem;
-    color: #ff0000c9;
 }
 
 .chat-float img {
@@ -417,11 +407,27 @@ span:hover + .arrow{
     background-color: #005c4b;
 }
 
-.triangle{
-    width: 10px;
-    height: 10px;
-    border-top: 50px solid transparent;
-    border-right: 100px solid red;
-    border-bottom: 50px solid transparent;
-    z-index: 8;
-  }
+.laptop{
+    display: none;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 5vw;
+    transform: translateY(40vh);
+    color: #f0f0f0;
+}
+
+.laptop p{
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+    main{
+        display: none;
+    }
+    html{
+        background-color: #2b2b2b;
+    }
+    .laptop{
+        display: block;
+    }
+}

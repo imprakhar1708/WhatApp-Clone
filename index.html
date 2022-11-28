@@ -6,12 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp Clone UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b88b7777d1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <main>
+    <div class="laptop">
+        <h1>It Is WhatsApp "Web" Clone</h1>
+        <p>Please View It In Laptop</p>
+    </div>
+    <main> 
         <div class="left">
             <div class="top-container">
                 <div class="dp-container">
@@ -95,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="chats" style="background-color: #222d34;">
+                <div id="up" class="chats" style="background-color: #222d34;">
                     <div class="cdp"><img src="prady.png" alt=""></div>
                     <div class="chat-name-container">
                         <div class="chat-top">
@@ -103,7 +110,7 @@
                             <div class="time">12:07</div>
                         </div>
                         <div class="chat-content">
-                            <div class="read"><img src="seen.png" alt=""></div><span>abbeee itna mt soch....jeetna toh
+                            <div class="read"><img src="seen.png" alt=""></div><span id="change">abbeee itna mt soch....jeetna toh
                                 apan ko hi...</span>
                             <div class="arrow"><i class="fa-solid fa-angle-down"></i></div>
                         </div>
@@ -197,13 +204,13 @@
             </div>
             <div class="right-main">
                 <div class="chat-background">
-                    <div class="chat-container-dup">
+                    <div class="chat-container-dup" id="chatContainer">
                         <div class="chat-float">
                             <div class="chat-box">
-                                <div class="number">
+                                <!-- <div class="number"> -->
                                     <!-- <p class="green">Prady</p> -->
                                     <!-- <p>~Nitish</p> -->
-                                </div>
+                                <!-- </div> -->
                                 <p>kl COD ka tournament h <br>
                                     toh
                                 </p>
@@ -215,10 +222,10 @@
                         <div class="chat-float">
                             <div class="chat-box">
                                 <div class="traingle"></div>
-                                <div class="number">
+                                <!-- <div class="number"> -->
                                     <!-- <p class="green">Prady</p> -->
                                     <!-- <p>~Ajay</p> -->
-                                </div>
+                                <!-- </div> -->
                                 <p>aaj acche se practice kr lete...aur sun matches m 
                                     <br>SMG se khelna...
                                 </p>
@@ -230,10 +237,10 @@
 
                         <div class="chat-float">
                             <div class="chat-box">
-                                <div class="number">
+                                <!-- <div class="number"> -->
                                     <!-- <p class="green">Prady</p> -->
                                     <!-- <p>~Elon Musk</p> -->
-                                </div>
+                                <!-- </div> -->
                                 <p>SMG ka fire rate aur mobility sahi rhti...<br>
                                     aur damage bhi shi rhta
                                 </p>
@@ -253,10 +260,10 @@
 
                         <div class="chat-float">
                             <div class="chat-box">
-                                <div class="number">
+                                <!-- <div class="number"> -->
                                     <!-- <p class="red">Prady</p> -->
                                     <!-- <p>~Anuj Bhaiya</p> -->
-                                </div>
+                                <!-- </div> -->
                                 <p>arrre.....sbko phele se hi scheme <br>
                                     pta h....😆😆
                                 </p>
@@ -266,10 +273,10 @@
 
                         <div class="chat-float">
                             <div class="chat-box">
-                                <div class="number">
+                                <!-- <div class="number"> -->
                                     <!-- <p class="green">Prady</p> -->
                                     <!-- <p>~Ajay</p> -->
-                                </div>
+                                <!-- </div> -->
                                 <p>ranked match m puree bnde SMG <br>se hi khel re h...😐</p>
                                 <span class="mess-time">19:00</span>
                             </div>
@@ -278,7 +285,7 @@
                         <div class="chat-float right-chat">
                             <!-- <img src="https://i.postimg.cc/0NN0z4wk/jor-jor-se-bolke-sabko-scheme-bata-de.jpg" alt=""> -->
                             <div class="chat-box green">
-                                <p>abbeee itna mt soch....jeetna toh <br>apan ko hi h...😜</p>
+                                <p>abbeee itna mt soch....jeetna toh apan ko hi h...😜</p>
                                 <span class="mess-time">19:00 <i class="fa-solid fa-check fa-lg" style="color:#80aea5;"></i></span>
                             </div>
                         </div>
@@ -290,11 +297,15 @@
                         <i class="fa-regular fa-face-laugh" style="color: #8696a0;"></i>
                         <i class="fa-solid fa-paperclip" style="color: #8696a0;"></i>
                     </div>
-                    <div class="message"><input type="text" placeholder="Type a message"></div>
+                    <div class="message" ><input type="text" id="input_" placeholder="Type a message"></div>
                     <div class="record"><i class="fa-solid fa-microphone" style="color: #8696a0;"></i></div>
                 </div>
             </div>
     </main>
+
+
+
+    <script src="wc.js"></script>
 </body>
 
 </html>
